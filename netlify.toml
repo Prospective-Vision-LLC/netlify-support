@@ -3,7 +3,8 @@
     publish = "./build/"
 
 [context.production.environment]
-    REACT_APP_PROD_VARIABLE="set to prod context"
+    # REACT_APP_PROD_VARIABLE="set to prod context"
+
     # This variable does not exist on the production site.
     REACT_APP_DEV_VARIABLE="set to prod context"
 
