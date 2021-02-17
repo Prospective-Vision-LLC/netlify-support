@@ -18,9 +18,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-dev": "cross-env context=dev npm run nci dev --debug",
+    "start-prod": "cross-env context=production npm run nci dev --debug",
     "build": "react-scripts build",
+    "build-prod": "react-scripts build --prod",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "nci": "netlify"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "netlify-cli": "^3.8.3"
   }
 }
